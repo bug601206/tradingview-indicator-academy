@@ -1,0 +1,32 @@
+name: New indicator proposal
+description: Propose one researchable educational indicator.
+title: "[Indicator]: "
+labels: [indicator, research]
+body:
+  - type: input
+    id: name
+    attributes: {label: Name and aliases}
+    validations: {required: true}
+  - type: textarea
+    id: question
+    attributes: {label: Educational question, description: What distinct information does it teach?}
+    validations: {required: true}
+  - type: textarea
+    id: formula
+    attributes: {label: Formula and known variants}
+    validations: {required: true}
+  - type: textarea
+    id: sources
+    attributes: {label: Original and authoritative sources}
+    validations: {required: true}
+  - type: textarea
+    id: overlap
+    attributes: {label: Overlap, complementarity, and failure modes}
+    validations: {required: true}
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This proposal does not include scraped TradingView data or copied third-party prose/code.
+          required: true

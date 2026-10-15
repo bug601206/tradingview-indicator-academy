@@ -1,0 +1,35 @@
+{
+  "name": "tradingview-indicator-academy",
+  "version": "0.2.8",
+  "license": "GPL-3.0-only",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "deploy": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/deploy-windows.ps1",
+    "typecheck": "tsc -b --pretty false",
+    "lint": "eslint . --max-warnings 0",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run lint && npm run test && npm run build"
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/chrome": "0.3.4",
+    "@types/node": "26.6.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "eslint": "10.12.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.7",
+    "globals": "17.13.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.1",
+    "vite": "8.3.3",
+    "vitest": "5.0.3"
+  }
+}

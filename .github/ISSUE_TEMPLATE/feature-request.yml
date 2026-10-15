@@ -1,0 +1,24 @@
+name: Feature request
+description: Propose a focused, non-commercial product improvement.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes: {label: User or learning problem}
+    validations: {required: true}
+  - type: textarea
+    id: outcome
+    attributes: {label: Desired outcome}
+    validations: {required: true}
+  - type: textarea
+    id: scope
+    attributes: {label: Minimal scope and alternatives}
+    validations: {required: true}
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Project boundaries
+      options:
+        - label: This does not require scraping, private APIs, trading accounts, payments, ads, analytics, or guaranteed signals.
+          required: true

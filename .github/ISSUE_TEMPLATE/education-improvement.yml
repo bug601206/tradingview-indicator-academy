@@ -1,0 +1,24 @@
+name: Educational content improvement
+description: Improve clarity, pedagogy, failure cases, or relationships.
+title: "[Education]: "
+labels: [documentation]
+body:
+  - type: input
+    id: page
+    attributes: {label: Indicator or section}
+    validations: {required: true}
+  - type: textarea
+    id: problem
+    attributes: {label: Learning problem}
+    validations: {required: true}
+  - type: textarea
+    id: improvement
+    attributes: {label: Proposed improvement}
+    validations: {required: true}
+  - type: dropdown
+    id: claim
+    attributes: {label: Claim type, options: [Fact, Common practice, Heuristic, Strategy example, Warning, Mixed]}
+    validations: {required: true}
+  - type: textarea
+    id: sources
+    attributes: {label: Sources if factual}

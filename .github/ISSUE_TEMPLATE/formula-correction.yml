@@ -1,0 +1,29 @@
+name: Mathematical formula correction
+description: Propose a sourced formula or convention correction.
+title: "[Math]: "
+labels: [mathematics, research]
+body:
+  - type: input
+    id: indicator
+    attributes: {label: Indicator and implementation variant}
+    validations: {required: true}
+  - type: textarea
+    id: current
+    attributes: {label: Current formula or behavior}
+    validations: {required: true}
+  - type: textarea
+    id: proposed
+    attributes: {label: Proposed formula or behavior}
+    validations: {required: true}
+  - type: textarea
+    id: convention
+    attributes: {label: Initialization, warm-up, indexing, smoothing, and zero-division convention}
+    validations: {required: true}
+  - type: textarea
+    id: sources
+    attributes: {label: Primary or authoritative sources, description: Provide direct links and explain exactly what each supports.}
+    validations: {required: true}
+  - type: textarea
+    id: reference
+    attributes: {label: Independent reference calculation, description: Include a small hand-worked or independently derived test case.}
+    validations: {required: true}

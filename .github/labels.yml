@@ -1,0 +1,36 @@
+- name: good first issue
+  color: "7057ff"
+  description: Focused work suitable for a first contribution
+- name: help wanted
+  color: "008672"
+  description: Maintainers welcome community help
+- name: documentation
+  color: "0075ca"
+  description: Documentation or educational prose
+- name: indicator
+  color: "1d76db"
+  description: Indicator proposal or implementation
+- name: mathematics
+  color: "d73a4a"
+  description: Formula, initialization, or reference-value work
+- name: research
+  color: "5319e7"
+  description: Source and provenance work
+- name: visualization
+  color: "fbca04"
+  description: Educational chart or visual behavior
+- name: accessibility
+  color: "0e8a16"
+  description: Accessibility improvement
+- name: translation
+  color: "c5def5"
+  description: Translation or localization
+- name: bug
+  color: "d73a4a"
+  description: Reproducible defect
+- name: enhancement
+  color: "a2eeef"
+  description: Product improvement
+- name: dependencies
+  color: "0366d6"
+  description: Dependency update
